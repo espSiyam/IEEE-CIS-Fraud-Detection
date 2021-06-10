@@ -36,7 +36,7 @@
     </ul>
 </ol>
 </br>
-<h3>Result Analysis: </h3>
+<h3>Result Analysis: </h3>     
 <ul>
   <li>Up-Sampling and Down-sampling cased the worst result. They were both 0.50 on public leaderboard.</li>
   <li>XGBoost model gave the best score which is 0.915064 but took too much time, around 25 mins 31 sec.</li>
