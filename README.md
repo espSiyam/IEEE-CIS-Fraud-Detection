@@ -2,7 +2,6 @@
 </br>
 <h3>Abstract: </h3>
 <p>This project is inspired from IEEE-CIS Fraud Detection Kaggle competition, where we have to solve a binary classification to predict fraudulent transaction. The dataset is cleaned, feature engineered, modeling and ensembling is done.</p>
-</br>
 <h3>Methodology: </h3>
 <ol>
   <li>Data Cleaning: </li>
@@ -35,7 +34,6 @@
       <li>Weighted Average ensemble is apply on two models prediction</li>
     </ul>
 </ol>
-</br>
 <h3>Result Analysis: </h3>     
 <ul>
   <li>Up-Sampling and Down-sampling cased the worst result. They were both 0.50 on public leaderboard.</li>
@@ -43,7 +41,8 @@
   <li>LightGBM too way less time but score was also a bit less. Score on public leaderboard is 0.896678.</li>
   <li>Weighted average ensemble was applied on the models (XGBoost, LightGBM) but the score was still 0. 915064</li>
 </ul>
-
+<h3>Conclusion: </h3>
+<p>The 0.915064 score is satisfactory but definitely there is more room to improve. Better selection of feature, feature engineering, hyper parameter tuning and model ensemble methods will help to push the result.</p>
 <br>
 Dataset Link: https://drive.google.com/drive/folders/1T_EoinJML_VHEX55pujEz-Ld3-ytMo5T?usp=sharing <br>
 Competetion link: https://www.kaggle.com/c/ieee-fraud-detection
