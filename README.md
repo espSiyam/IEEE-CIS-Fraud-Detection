@@ -20,6 +20,7 @@
     <ul>
       <li>Correlation is measured related to Fraud to find out the best feature.</li>
       <li>Features with less correlation is dropped from the dataset.</li>
+      <li>Find out the best features from Kaggle public notebook and dropped the rest.</li>
     </ul>
   <li>Handling Class Imbalance:</li>
     <ul>
@@ -40,6 +41,7 @@
   <li>XGBoost model gave the best score which is 0.915064 but took too much time, around 25 mins 31 sec.</li>
   <li>LightGBM too way less time but score was also a bit less. Score on public leaderboard is 0.896678.</li>
   <li>Weighted average ensemble was applied on the models (XGBoost, LightGBM) but the score was still 0. 915064</li>
+  <li>Important features selection + LightGBM score is: 0.939961</li>
 </ul>
 <h3>Conclusion: </h3>
 <p>The 0.915064 score is satisfactory but definitely there is more room to improve. Better selection of feature, feature engineering, hyper parameter tuning and model ensemble methods will help to push the result.</p>
