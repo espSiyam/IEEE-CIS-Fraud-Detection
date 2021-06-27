@@ -1,6 +1,6 @@
 <h1 align="center">IEEE-CIS Fraud Detection</h1>
 </br>
-[Live APP](https://fraud-transaction-detection.herokuapp.com/)
+<a href="https://fraud-transaction-detection.herokuapp.com/"><b>Live APP: https://fraud-transaction-detection.herokuapp.com/</b> </a>
 <h3>Abstract: </h3>
 <p>This project is inspired from IEEE-CIS Fraud Detection Kaggle competition, where we have to solve a binary classification to predict fraudulent transaction. The dataset is cleaned, feature engineered, modeling and ensembling is done.</p>
 <h3>Methodology: </h3>
