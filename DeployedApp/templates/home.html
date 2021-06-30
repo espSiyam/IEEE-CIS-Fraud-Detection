@@ -1,0 +1,2105 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <!-- Starts image section -->
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="thumbnail">
+                <img src="{{url_for('static', filename='images/fraud.png')}}" class="img-thumbnail" />
+            </div>
+        </div>
+    </div>
+    <!-- Ends image section -->
+    
+    <!-- Starts form section -->
+    <div class="form-container ">
+        <form class="form-horizontal" action = "/predict/" method="post">
+        
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_1">Feature 1:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_1" name="feature_1">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_2">Feature 2:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_2" name="feature_2">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_3">Feature 3:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_3" name="feature_3">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_4">Feature 4:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_4" name="feature_4">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_5">Feature 5</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_5" name="feature_5">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_6">Feature 6:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_6" name="feature_6">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_7">Feature 7:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_7" name="feature_7">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_8">Feature 8:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_8" name="feature_8">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_9">Feature 9:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_9" name="feature_9">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_10">Feature 10:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_10" name="feature_10">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_11">Feature 11:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_11" name="feature_11">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_12">Feature 12:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_12" name="feature_12">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_13">Feature 13:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_13" name="feature_13">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_14">Feature 14:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_14" name="feature_14">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_15">Feature 15:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_15" name="feature_15">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_16">Feature 16:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_16" name="feature_16">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_17">Feature 17:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_17" name="feature_17">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_18">Feature 18:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_18" name="feature_18">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_19">Feature 19:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_19" name="feature_19">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_20">Feature 20:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_20" name="feature_20">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_21">Feature 21:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_21" name="feature_21">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_22">Feature 22:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_22" name="feature_22">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_23">Feature 23:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_23" name="feature_23">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_24">Feature 24:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_24" name="feature_24">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_25">Feature 25:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_25" name="feature_25">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_26">Feature 26:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_26" name="feature_26">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_27">Feature 27:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_27" name="feature_27">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_28">Feature 28:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_28" name="feature_28">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_29">Feature 29:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_29" name="feature_29">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_30">Feature 30:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_30" name="feature_30">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_31">Feature 31:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_31" name="feature_31">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_32">Feature 32:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_32" name="feature_32">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_33">Feature 33:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_33" name="feature_33">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_34">Feature 34:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_34" name="feature_34">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_35">Feature 35:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_35" name="feature_35">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_36">Feature 36:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_36" name="feature_36">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_37">Feature 37:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_37" name="feature_37">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_38">Feature 38:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_38" name="feature_38">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_39">Feature 39:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_39" name="feature_39">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_40">Feature 40:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_40" name="feature_40">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_41">Feature 41:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_41" name="feature_41">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_42">Feature 42:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_42" name="feature_42">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_43">Feature 43:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_43" name="feature_43">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_44">Feature 44:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_44" name="feature_44">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_45">Feature 45:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_45" name="feature_45">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_46">Feature 46:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_46" name="feature_46">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_47">Feature 47:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_47" name="feature_47">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_48">Feature 48:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_48" name="feature_48">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_49">Feature 49:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_49" name="feature_49">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_50">Feature 50:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_50" name="feature_50">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_51">Feature 51:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_51" name="feature_51">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_52">Feature 52:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_52" name="feature_52">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_53">Feature 53:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_53" name="feature_53">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_54">Feature 54:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_54" name="feature_54">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_55">Feature 55:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_55" name="feature_55">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_56">Feature 56:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_56" name="feature_56">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_57">Feature 57:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_57" name="feature_57">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_58">Feature 58:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_58" name="feature_58">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_59">Feature 59:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_59" name="feature_59">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_60">Feature 60:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_60" name="feature_60">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_61">Feature 61:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_61" name="feature_61">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_62">Feature 62:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_62" name="feature_62">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_63">Feature 63:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_63" name="feature_63">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_64">Feature 64:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_64" name="feature_64">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_65">Feature 65:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_65" name="feature_65">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_66">Feature 66:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_66" name="feature_66">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_67">Feature 67:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_67" name="feature_67">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_68">Feature 68:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_68" name="feature_68">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_69">Feature 69:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_69" name="feature_69">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_70">Feature 70:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_70" name="feature_70">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_71">Feature 71:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_71" name="feature_71">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_72">Feature 72:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_72" name="feature_72">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_73">Feature 73:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_73" name="feature_73">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_74">Feature 74:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_74" name="feature_74">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_75">Feature 75:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_75" name="feature_75">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_76">Feature 76:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_76" name="feature_76">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_77">Feature 77:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_77" name="feature_77">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_78">Feature 78:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_78" name="feature_78">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_79">Feature 79:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_79" name="feature_79">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_80">Feature 80:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_80" name="feature_80">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_81">Feature 81:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_81" name="feature_81">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_82">Feature 82:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_82" name="feature_82">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_83">Feature 83:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_83" name="feature_83">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_84">Feature 84:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_84" name="feature_84">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_85">Feature 85:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_85" name="feature_85">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_86">Feature 86:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_86" name="feature_86">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_87">Feature 87:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_87" name="feature_87">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_88">Feature 88:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_88" name="feature_88">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_89">Feature 89:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_89" name="feature_89">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_90">Feature 90:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_90" name="feature_90">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_91">Feature 91:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_91" name="feature_91">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_92">Feature 92:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_92" name="feature_92">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_93">Feature 93:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_93" name="feature_93">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_94">Feature 94:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_94" name="feature_94">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_95">Feature 95:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_95" name="feature_95">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_96">Feature 96:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_96" name="feature_96">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_97">Feature 97:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_97" name="feature_97">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_98">Feature 98:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_98" name="feature_98">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_99">Feature 99:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_99" name="feature_99">
+              </div>
+            </div>
+
+                        <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_101">Feature 101:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_101" name="feature_101">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_102">Feature 102:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_102" name="feature_102">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_103">Feature 103:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_103" name="feature_103">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_104">Feature 104:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_104" name="feature_104">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_105">Feature 105</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_105" name="feature_105">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_106">Feature 106:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_106" name="feature_106">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_107">Feature 107:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_107" name="feature_107">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_108">Feature 108:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_108" name="feature_108">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_109">Feature 109:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_109" name="feature_109">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_10">Feature 110:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_10" name="feature_10">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_111">Feature 111:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_111" name="feature_111">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_112">Feature 112:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_112" name="feature_112">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_113">Feature 113:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_113" name="feature_113">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_114">Feature 114:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_114" name="feature_114">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_115">Feature 115:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_115" name="feature_115">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_116">Feature 116:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_116" name="feature_116">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_117">Feature 117:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_117" name="feature_117">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_118">Feature 118:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_118" name="feature_118">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_119">Feature 119:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_119" name="feature_119">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_120">Feature 120:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_120" name="feature_120">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_121">Feature 121:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_121" name="feature_121">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_122">Feature 122:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_122" name="feature_122">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_123">Feature 123:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_123" name="feature_123">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_124">Feature 124:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_124" name="feature_124">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_125">Feature 125:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_125" name="feature_125">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_126">Feature 126:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_126" name="feature_126">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_127">Feature 127:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_127" name="feature_127">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_128">Feature 128:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_128" name="feature_128">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_129">Feature 129:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_129" name="feature_129">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_130">Feature 130:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_130" name="feature_130">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_131">Feature 131:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_131" name="feature_131">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_132">Feature 132:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_132" name="feature_132">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_133">Feature 133:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_133" name="feature_133">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_134">Feature 134:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_134" name="feature_134">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_135">Feature 135:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_135" name="feature_135">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_136">Feature 136:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_136" name="feature_136">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_137">Feature 137:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_137" name="feature_137">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_138">Feature 138:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_138" name="feature_138">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_139">Feature 139:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_139" name="feature_139">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_140">Feature 140:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_140" name="feature_140">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_141">Feature 141:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_141" name="feature_141">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_142">Feature 142:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_142" name="feature_142">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_143">Feature 143:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_143" name="feature_143">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_144">Feature 144:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_144" name="feature_144">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_145">Feature 145:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_145" name="feature_145">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_146">Feature 146:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_146" name="feature_146">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_147">Feature 147:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_147" name="feature_147">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_148">Feature 148:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_148" name="feature_148">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_149">Feature 149:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_149" name="feature_149">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_150">Feature 150:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_150" name="feature_150">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_151">Feature 151:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_151" name="feature_151">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_152">Feature 152:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_152" name="feature_152">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_153">Feature 153:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_153" name="feature_153">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_154">Feature 154:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_154" name="feature_154">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_155">Feature 155:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_155" name="feature_155">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_156">Feature 156:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_156" name="feature_156">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_157">Feature 157:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_157" name="feature_157">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_158">Feature 158:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_158" name="feature_158">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_159">Feature 159:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_159" name="feature_159">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_160">Feature 160:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_160" name="feature_160">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_161">Feature 161:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_161" name="feature_161">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_162">Feature 162:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_162" name="feature_162">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_163">Feature 163:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_163" name="feature_163">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_164">Feature 164:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_164" name="feature_164">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_165">Feature 165:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_165" name="feature_165">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_166">Feature 166:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_166" name="feature_166">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_167">Feature 167:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_167" name="feature_167">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_168">Feature 168:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_168" name="feature_168">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_169">Feature 169:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_169" name="feature_169">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_170">Feature 170:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_170" name="feature_170">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_171">Feature 171:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_171" name="feature_171">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_172">Feature 172:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_172" name="feature_172">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_173">Feature 173:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_173" name="feature_173">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_174">Feature 174:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_174" name="feature_174">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_175">Feature 175:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_175" name="feature_175">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_176">Feature 176:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_176" name="feature_176">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_177">Feature 177:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_177" name="feature_177">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_178">Feature 178:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_178" name="feature_178">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_179">Feature 179:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_179" name="feature_179">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_180">Feature 180:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_180" name="feature_180">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_181">Feature 181:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_181" name="feature_181">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_182">Feature 182:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_182" name="feature_182">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_183">Feature 183:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_183" name="feature_183">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_184">Feature 184:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_184" name="feature_184">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_185">Feature 185:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_185" name="feature_185">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_186">Feature 186:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_186" name="feature_186">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_187">Feature 187:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_187" name="feature_187">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_188">Feature 188:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_188" name="feature_188">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_189">Feature 189:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_189" name="feature_189">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_190">Feature 190:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_190" name="feature_190">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_191">Feature 191:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_191" name="feature_191">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_192">Feature 192:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_192" name="feature_192">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_193">Feature 193:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_193" name="feature_193">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_194">Feature 194:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_194" name="feature_194">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_195">Feature 195:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_195" name="feature_195">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_196">Feature 196:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_196" name="feature_196">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_197">Feature 197:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_197" name="feature_197">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_198">Feature 198:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_198" name="feature_198">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_199">Feature 199:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_199" name="feature_199">
+              </div>
+            </div>
+
+                        <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_201">Feature 201:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_201" name="feature_201">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_202">Feature 202:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_202" name="feature_202">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_203">Feature 203:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_203" name="feature_203">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_204">Feature 204:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_204" name="feature_204">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_205">Feature 205</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_205" name="feature_205">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_206">Feature 206:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_206" name="feature_206">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_207">Feature 207:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_207" name="feature_207">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_208">Feature 208:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_208" name="feature_208">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_209">Feature 209:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_209" name="feature_209">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_20">Feature 210:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_20" name="feature_20">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_211">Feature 211:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_211" name="feature_211">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_212">Feature 212:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_212" name="feature_212">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_213">Feature 213:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_213" name="feature_213">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_214">Feature 214:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_214" name="feature_214">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_215">Feature 215:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_215" name="feature_215">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_216">Feature 216:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_216" name="feature_216">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_217">Feature 217:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_217" name="feature_217">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_218">Feature 218:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_218" name="feature_218">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_219">Feature 219:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_219" name="feature_219">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_220">Feature 220:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_220" name="feature_220">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_221">Feature 221:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_221" name="feature_221">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_222">Feature 222:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_222" name="feature_222">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_223">Feature 223:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_223" name="feature_223">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_224">Feature 224:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_224" name="feature_224">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_225">Feature 225:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_225" name="feature_225">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_226">Feature 226:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_226" name="feature_226">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_227">Feature 227:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_227" name="feature_227">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_228">Feature 228:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_228" name="feature_228">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_229">Feature 229:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_229" name="feature_229">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_230">Feature 230:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_230" name="feature_230">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_231">Feature 231:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_231" name="feature_231">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_232">Feature 232:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_232" name="feature_232">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_233">Feature 233:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_233" name="feature_233">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_234">Feature 234:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_234" name="feature_234">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_235">Feature 235:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_235" name="feature_235">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_236">Feature 236:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_236" name="feature_236">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_237">Feature 237:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_237" name="feature_237">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_238">Feature 238:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_238" name="feature_238">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_239">Feature 239:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_239" name="feature_239">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_240">Feature 240:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_240" name="feature_240">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_241">Feature 241:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_241" name="feature_241">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_242">Feature 242:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_242" name="feature_242">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_243">Feature 243:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_243" name="feature_243">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_244">Feature 244:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_244" name="feature_244">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_245">Feature 245:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_245" name="feature_245">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_246">Feature 246:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_246" name="feature_246">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_247">Feature 247:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_247" name="feature_247">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_248">Feature 248:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_248" name="feature_248">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_249">Feature 249:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_249" name="feature_249">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_250">Feature 250:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_250" name="feature_250">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_251">Feature 251:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_251" name="feature_251">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_252">Feature 252:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_252" name="feature_252">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_253">Feature 253:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_253" name="feature_253">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_254">Feature 254:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_254" name="feature_254">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_255">Feature 255:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_255" name="feature_255">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_256">Feature 256:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_256" name="feature_256">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_257">Feature 257:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_257" name="feature_257">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_258">Feature 258:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_258" name="feature_258">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_259">Feature 259:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_259" name="feature_259">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_260">Feature 260:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_260" name="feature_260">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_261">Feature 261:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_261" name="feature_261">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_262">Feature 262:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_262" name="feature_262">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_263">Feature 263:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_263" name="feature_263">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_264">Feature 264:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_264" name="feature_264">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_265">Feature 265:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_265" name="feature_265">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_266">Feature 266:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_266" name="feature_266">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_267">Feature 267:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_267" name="feature_267">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_268">Feature 268:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_268" name="feature_268">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_269">Feature 269:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_269" name="feature_269">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_270">Feature 270:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_270" name="feature_270">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_271">Feature 271:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_271" name="feature_271">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_272">Feature 272:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_272" name="feature_272">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_273">Feature 273:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_273" name="feature_273">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_274">Feature 274:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_274" name="feature_274">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_275">Feature 275:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_275" name="feature_275">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_276">Feature 276:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_276" name="feature_276">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_277">Feature 277:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_277" name="feature_277">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_278">Feature 278:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_278" name="feature_278">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_279">Feature 279:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_279" name="feature_279">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_280">Feature 280:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_280" name="feature_280">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_281">Feature 281:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_281" name="feature_281">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_282">Feature 282:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_282" name="feature_282">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_283">Feature 283:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_283" name="feature_283">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_284">Feature 284:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_284" name="feature_284">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_285">Feature 285:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_285" name="feature_285">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_286">Feature 286:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_286" name="feature_286">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_287">Feature 287:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_287" name="feature_287">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_288">Feature 288:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_288" name="feature_288">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_289">Feature 289:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_289" name="feature_289">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_290">Feature 290:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_290" name="feature_290">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_291">Feature 291:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_291" name="feature_291">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_292">Feature 292:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_292" name="feature_292">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_293">Feature 293:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_293" name="feature_293">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_294">Feature 294:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_294" name="feature_294">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_295">Feature 295:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_295" name="feature_295">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_296">Feature 296:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_296" name="feature_296">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_297">Feature 297:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_297" name="feature_297">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-1.5" for="feature_298">Feature 298:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="feature_298" name="feature_298">
+              </div>
+            </div>
+
+            
+            <div class="form-group row"> 
+            <label class="control-label col-sm-2" for="">&nbsp;</label>                
+              <div class="col-sm-offset-2 col-sm-4">
+                <button type="submit" class="btn btn-primary">Predict</button>
+              </div>
+            </div>
+          </form>
+        <!-- Ends form section -->
+        
+        
+    </div>
+
+
+{% endblock %}
