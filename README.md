@@ -3,6 +3,7 @@
 <a href="https://fraud-transaction-detection.herokuapp.com/"><b>Live APP: https://fraud-transaction-detection.herokuapp.com/</b> </a>
 </br>
 <a href="https://github.com/espSiyam/FraudDetectionAPP/"><b>Deploment via Flask: https://github.com/espSiyam/FraudDetectionAPP/</b> </a>
+![alt text]('https://i.ibb.co/y4B9KQR/end-to-end-ml-0.png')
 <h3>Abstract: </h3>
 <p>This project is inspired from IEEE-CIS Fraud Detection Kaggle competition, where we have to solve a binary classification to predict fraudulent transaction. The dataset is cleaned, feature engineered, modeling and ensembling is done.</p>
 <h3>Methodology: </h3>
